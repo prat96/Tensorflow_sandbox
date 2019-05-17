@@ -14,22 +14,6 @@ validation_data = np.arange()
 for i, c in enumerate(input_num):
     print("{} input = {} squared".format(c, square[i]))
 
-l0 = tf.keras.layers.Dense(units=512, input_shape=[1], activation='relu')
-d0 = tf.keras.layers.Dropout(0.4)
-# rl0 = tf.keras.layers.LeakyReLU()
-l1 = tf.keras.layers.Dense(units=1024, activation='relu')
-# rl1 = tf.keras.layers.LeakyReLU()
-# l2 = tf.keras.layers.Dense(units=500, activation='elu')
-# rl2 = tf.keras.layers.LeakyReLU()
-# l3 = tf.keras.layers.Dense(units=500, activation='elu')
-# d1 = tf.keras.layers.Dropout(0.4)
-# rl3 = tf.keras.layers.LeakyReLU()
-# l4 = tf.keras.layers.Dense(units=100, activation='relu')
-# rl4 = tf.keras.layers.LeakyReLU()
-# l5 = tf.keras.layers.Dense(units=20, activation='relu')
-# l6 = tf.keras.layers.Dense(units=500, activation='relu')
-
-l7 = tf.keras.layers.Dense(units=1, activation='linear')
 model = tf.keras.Sequential(
     [tf.keras.layers.Dense(units=512, input_shape=[1], activation='relu'),
      tf.keras.layers.Dropout(0.4),
