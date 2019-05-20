@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1718d25-eba5-4dc3-a2fd-381b35102a89" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Cnns/flowers_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20numbers.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/square.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/model.square_sgd" beforeDir="false" afterPath="$PROJECT_DIR$/models/model.square_sgd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/squares/square.py" beforeDir="false" afterPath="$PROJECT_DIR$/squares/square.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cnns/dogs_vs_cats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="1496">
               <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cnns/flowers_classification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="682">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
@@ -43,20 +41,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/squares/square.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            <state relative-caret-position="396">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -97,8 +86,8 @@
         <option value="$PROJECT_DIR$/square.py" />
         <option value="$PROJECT_DIR$/Cnns/dogs_vs_cats.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/squares/square.py" />
         <option value="$PROJECT_DIR$/Cnns/flowers_classification.py" />
+        <option value="$PROJECT_DIR$/squares/square.py" />
       </list>
     </option>
   </component>
@@ -113,28 +102,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="sandbox_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox_" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox_" type="462c0819:PsiDirectoryNode" />
-              <item name="Cnns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="sandbox_" type="b2602c69:ProjectViewProjectNode" />
-              <item name="sandbox_" type="462c0819:PsiDirectoryNode" />
-              <item name="squares" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,8 +166,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="1440" extended-state="4" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1718377" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17067403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -209,7 +179,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.4118098" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4118098" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32924962" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -252,13 +222,13 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="6" selection-start-column="6" selection-end-column="6" />
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Cnns/dogs_vs_cats.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="1496">
           <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
@@ -268,8 +238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Cnns/flowers_classification.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="682">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
@@ -278,8 +248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/squares/square.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="396">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>

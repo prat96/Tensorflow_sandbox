@@ -9,21 +9,22 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
 input_num = np.arange(-50, 50, 1)
 square = np.square(input_num)
-validation_data = np.arange()
+
 
 for i, c in enumerate(input_num):
     print("{} input = {} squared".format(c, square[i]))
 
 model = tf.keras.Sequential(
     [tf.keras.layers.Dense(units=512, input_shape=[1], activation='relu'),
-     tf.keras.layers.Dropout(0.4),
+     tf.keras.layers.Dropout(0.4)  ,
      tf.keras.layers.Dense(units=1024, activation='relu'),
+     tf.keras.layers.Dense(units=1, activation='linear')
      ])
 start = time.time()
 
 model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.0005))
 
-history = model.fit(input_num, square, epochs=5000, verbose=True, batch_size=64)
+history = model.fit(input_num, square, epochs=1000, verbose=True, batch_size=64)
 print("Finished training the model")
 
 end = (time.time() - start)
