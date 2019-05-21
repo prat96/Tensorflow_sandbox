@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1718d25-eba5-4dc3-a2fd-381b35102a89" name="Default Changelist" comment="" />
+    <list default="true" id="a1718d25-eba5-4dc3-a2fd-381b35102a89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/transfer_learning/cats_vs_dogs.py" beforeDir="false" afterPath="$PROJECT_DIR$/transfer_learning/cats_vs_dogs.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/transfer_learning/cats_vs_dogs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+            <state relative-caret-position="1106">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="e#0#82#0" expanded="true" />
               </folding>
@@ -282,8 +284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/transfer_learning/cats_vs_dogs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        <state relative-caret-position="1106">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
           <folding>
             <element signature="e#0#82#0" expanded="true" />
           </folding>
