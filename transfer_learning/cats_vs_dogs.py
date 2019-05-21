@@ -1,3 +1,12 @@
+"""
+This code works only with nightly builds of TF.
+
+pip install tf-nightly-gpu
+pip install "tensorflow_hub==0.4.0"
+pip install -U tensorflow_datasets
+"""
+
+
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 import matplotlib.pylab as plt
