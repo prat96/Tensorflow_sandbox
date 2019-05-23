@@ -161,3 +161,6 @@ for n in range(30):
   plt.title(predicted_class_names[n].title(), color=color)
   plt.axis('off')
 _ = plt.suptitle("Model predictions (blue: correct, red: incorrect)")
+
+
+
