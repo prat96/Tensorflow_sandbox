@@ -85,7 +85,6 @@ label_batch = label_batch.numpy()
 result_batch = model.predict(image_batch)
 
 predicted_class_names = imagenet_labels[np.argmax(result_batch, axis=-1)]
-predicted_class_names
 
 plt.figure(figsize=(10, 9))
 for n in range(30):
@@ -153,14 +152,11 @@ print(predicted_class_names)
 print("Labels: ", label_batch)
 print("Predicted labels: ", predicted_ids)
 
-plt.figure(figsize=(10,9))
+plt.figure(figsize=(10, 9))
 for n in range(30):
-  plt.subplot(6,5,n+1)
-  plt.imshow(image_batch[n])
-  color = "blue" if predicted_ids[n] == label_batch[n] else "red"
-  plt.title(predicted_class_names[n].title(), color=color)
-  plt.axis('off')
+    plt.subplot(6, 5, n + 1)
+    plt.imshow(image_batch[n])
+    color = "blue" if predicted_ids[n] == label_batch[n] else "red"
+    plt.title(predicted_class_names[n].title(), color=color)
+    plt.axis('off')
 _ = plt.suptitle("Model predictions (blue: correct, red: incorrect)")
-
-
-

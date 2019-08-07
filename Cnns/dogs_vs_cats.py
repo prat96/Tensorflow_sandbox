@@ -99,6 +99,27 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(2, activation='softmax')
 ])
 
+"""
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
+    tf.keras.layers.MaxPooling2D(2, 2),
+
+    tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2, 2),
+
+    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2, 2),
+
+    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
+    tf.keras.layers.MaxPooling2D(2, 2),
+
+    tf.keras.layers.Dropout(0.5),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(512, activation='relu'),
+    tf.keras.layers.Dense(2, activation='softmax')
+])
+"""
+
 model.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
@@ -109,11 +130,13 @@ start = time.time()
 
 EPOCHS = 100
 history = model.fit_generator(train_data_gen, steps_per_epoch=int(np.ceil(total_train / float(BATCH_SIZE))),
-                              epochs=EPOCHS, validation_data=val_data_gen,
+                              epochs=EPOCHS, validation_data=val_data_gen, use_multiprocessing=True, workers=6,
                               validation_steps=int(np.ceil(total_val / float(BATCH_SIZE)))
                               )
 
 print("\nTime taken: ", (time.time() - start))
+
+tf.keras.models.save_model(model, "./saved_models/model.cats_vs_dogs", overwrite=True, include_optimizer=True)
 
 acc = history.history['acc']
 val_acc = history.history['val_acc']

@@ -3,9 +3,12 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import time, os
 import numpy as np
+from delve.kerascallback import CustomTensorBoard, SaturationLogger
 
-tf.logging.set_verbosity(tf.logging.ERROR)
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
+# tf.logging.set_verbosity(tf.logging.ERROR)
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
+# import ipdb; ipbd.set_trace()
+
 
 input_num = np.linspace(-100, 100, 50000)
 np.append(np.linspace(-20, 20, 10000) + 0.3, input_num)
@@ -24,11 +27,14 @@ model = tf.keras.Sequential(
      tf.keras.layers.Dense(units=8, activation='relu'),
      tf.keras.layers.Dense(units=1, activation='linear')
      ])
+
+saturation_logger = SaturationLogger(model, input_data=input_num[:10], print_freq=1)
+
 start = time.time()
 
 model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.0005))
 
-history = model.fit(input_num, square, epochs=50, verbose=True, batch_size=64)
+history = model.fit(input_num, square, epochs=50, verbose=True, batch_size=64, callbacks=[saturation_logger])
 print("Finished training the model")
 
 score = model.evaluate(validation_data, validation_squared, batch_size=64)
